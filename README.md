@@ -10,35 +10,6 @@
 
 ---
 
-## ⚙️ ¿Cómo funciona?
-┌─────────────────────────────────────────────────────────────┐
-│ INTERFAZ WEB (HTML/CSS/JS) │
-├─────────────────────────────────────────────────────────────┤
-│ Usuario ingresa URL → Selecciona protocolo → Click Validar │
-└───────────────────────────┬─────────────────────────────────┘
-↓
-┌─────────────────────────────────────────────────────────────┐
-│ NÚCLEO DEL VALIDADOR (JavaScript) │
-├─────────────────────────────────────────────────────────────┤
-│ • Mapea 180+ módulos Odoo predefinidos │
-│ • Genera rutas dinámicamente por módulo │
-│ • Realiza peticiones GET concurrentes (Promise.all) │
-│ • Analiza respuestas HTTP (200, 301, 302, 403, 404) │
-│ • Detecta endpoints sensibles expuestos │
-│ • Identifica patrones de vulnerabilidad │
-└───────────────────────────┬─────────────────────────────────┘
-↓
-┌─────────────────────────────────────────────────────────────┐
-│ ANÁLISIS Y DETECCIÓN DE VULNERABILIDADES │
-├─────────────────────────────────────────────────────────────┤
-│ • Comparación con base de CVE │
-│ • Detección de endpoints críticos │
-│ • Identificación de path traversal │
-│ • Análisis de respuestas sensibles │
-└─────────────────────────────────────────────────────────────┘
-
----
-
 ## 🔄 Flujo de Ejecución
 
 ### 1. Inicialización
